@@ -1,0 +1,71 @@
+<!-- Doctype för html5 -->
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- länkar till CSS-mallen som jag används till denna hemsida samt ett javascript. -->
+<link rel="stylesheet" href="maja_style.css" />
+<script src="menuscript.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="fixbackgroundscript.js"></script>
+<!-- following script fixes the background image problem, sizeing it up well, 
+	unless used on extremly high resolution screens. -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		fixBackground();
+	});
+
+</script>
+<!-- Titeln på hemsidan. -->
+<title>Maja´s Matsal</title>
+</head>
+<body>
+<div id="backgroundDiv">
+<img src="Images/brick_and_ivy.png" id="background"/>
+<!-- "header", "section" och "aside" taggarna är en del av html5. "aside"-taggen används inte på denna sida. -->
+<header>
+	<br />
+	
+	<!-- Denna "div" är tom pga att allt som ska finnas i den finns med i css-id:t "Header". -->
+	<div id="Header">
+		
+	</div>
+	
+	<!-- Här är menyn indelad i en tabell för att enkelt få lika avstånd till alla menyval.
+	Här används också javascriptet, javascriptet används för att förstora upp menyknapparna när muspekaren är placerad över ett menyval.-->
+	<div id="MenuPanel">
+		<table class="Table"><tr>
+			<td><a href="index.html" onmouseover="setOverImg('1','');" onmouseout="setOutImg('1','');" target=""><img src="Buttons/btnMenu1.png" alt="Veckan´s meny" border="0" id="button1" vspace="0" hspace="0"></a></td>
+			<td><a href="catering.html" onmouseover="setOverImg('2','');" onmouseout="setOutImg('2','');" target=""><img src="Buttons/btnCatering1.png" alt="Catering" border="0" id="button2" vspace="0" hspace="0"></a></td>
+			<td><a href="event.html" onmouseover="setOverImg('3','');" onmouseout="setOutImg('3','');" target=""><img src="Buttons/btnEvent1.png" alt="Fest och Event" border="0" id="button3" vspace="0" hspace="0"></a></td>
+			<td><a href="contact.html" onmouseover="setOverImg('4','');" onmouseout="setOutImg('4','');" target=""><img src="Buttons/btnContact1.png" alt="Kontakt" border="0" id="button4" vspace="0" hspace="0"></a></td>
+		</tr></table>
+	</div>
+</header>
+
+<section>
+	
+	<!-- "MiddlePanel" visar själva innehållet under alla meny val i en vit-transparent box. -->
+	<div id="MiddlePanel">
+		<br />
+		<h1>Catering</h1>
+		<p class="Text">
+		Vi kör ut luncher till ditt företag dagligen! <br />
+		Utkörning av mat 55:- per person, beställs före kl 09.00, minst 5 st. <br /><br />
+
+		Catering för privatpersoner och företag!<br />
+		Allt från kallskuret till matiga soppor, pastasallad eller varma rätter med mera.<br />
+		Vi utformar menyer efter dina önskemål!<br />
+		</p>
+		
+	</div>
+	<!-- Visar vem som producerat sidan. -->
+
+</section>
+	<div id="ProductionByMeBox">
+		Skapad av <a href="https://se.linkedin.com/pub/emil-gilljam/44/40/721"> Emil Gilljam</a>.
+	</div>
+	</div>
+</body>
+</html>
