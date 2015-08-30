@@ -12,6 +12,7 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
     color:black;
+    font-size: large;
     padding-bottom:65px;
 }
 
@@ -66,7 +67,9 @@ div.header {
     background-color:white;
 }
 
-
+.text-small {
+    font-size: x-small;
+}
 
 .hidden {
     display:none;
@@ -86,4 +89,12 @@ div.header {
 
 .reset-link-css:active {
     color:black;
+}
+
+.trans-box {
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+
 }
