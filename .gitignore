@@ -1,0 +1,13 @@
+.classpath
+.idea/
+*.iml
+target/
+.project
+.settings/
+logs
+nbactions.xml
+*.idea/
+*.idea/*
+.idea
+*.idea
+idea/*
